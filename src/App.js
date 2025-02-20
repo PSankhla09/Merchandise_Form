@@ -11,7 +11,7 @@ function App() {
       <Loader />
 
       <Routes>
-        <Route path="/Merchandise_Form" element={<Info />} />
+        <Route path="/Merchandise_Form/" element={<Info />} />
         <Route path="/success" element={<AS />} />
         <Route path="/already-submitted" element={<AlreadySubmitted />} />
       </Routes>

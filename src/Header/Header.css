@@ -1,0 +1,40 @@
+.logo{
+    position: relative;
+    margin:0 15%;
+    padding-bottom: 1%;
+}
+.logo img{
+width:100%;
+}
+.ontop{
+    position: absolute;
+    z-index: 1;
+   margin-top: -15%;
+   margin-left: 45%;
+}
+.ontop img{
+    width:40%;
+    height:40%;
+}
+@media(max-width:1440px){
+    .ontop img{
+        width:35%;
+        height:35%;
+    }
+}
+@media(max-width:1080px){
+    .ontop img{
+        width:30%;
+        height:30%;
+    }
+}
+@media(max-width:900px){
+    .ontop img{
+        width:25%;
+        height:25%;
+    }
+    .ontop{
+        margin-top:-17%;
+    }
+}
+

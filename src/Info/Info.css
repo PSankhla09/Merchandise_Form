@@ -1,0 +1,280 @@
+/* Global Styles */
+body.no-scroll {
+  overflow: hidden;
+}
+body{
+  background-color: black;
+}
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+
+/* Page Content */
+.page-content {
+  padding: 20px;
+}
+
+/* Inform Section */
+.inform {
+  max-width: 71%;
+  margin-left: 13.25%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+  position: relative;
+  color: white;
+  background: radial-gradient(#164b9c, #16064bf9);
+  display: block;
+  padding-left: 2%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 2px solid rgb(0, 17, 126);
+  border-radius: 10px;
+}
+
+.inform h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inform p {
+  font-size: 0.85rem;
+  font-weight: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inform p.hh {
+  color: red;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  z-index: 102;
+}
+
+/* Cookie Banner Buttons */
+.accept-btn, .decline-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.decline-btn {
+  background-color: #dc3545;
+}
+
+.accept-btn:hover, .decline-btn:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Submit button */
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-left: 27vw;
+  }
+.submit-btn {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Container for the select dropdown */
+.dropdown-select {
+  width: 100vw;
+  max-width: 21.5vw; /* Adjust the width to your preference */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+ 
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+/* Change background color and border when the select is hovered or focused */
+.dropdown-select:hover,
+.dropdown-select:focus {
+  background-color: #f1f1f1;
+  border-color: #888;
+}
+
+/* Style for the default 'Select Hostel' option */
+.dropdown-select option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+
+
+/* Input Styling */
+.inform input {
+  padding: 10px 8px;
+  border: none;
+  
+  width: 20vw;
+  border-radius: 5px;
+}
+.inform input[type="radio"]{
+  margin-left: 7vw;
+}
+
+.inform span {
+  font-weight: bold;
+}
+/* Info.css */
+
+/* Error message style */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* Info.css */
+
+/* Style for the red asterisk (*) */
+h4::after {
+  content: " *";  /* Adds the asterisk */
+  color: red;      /* Makes the asterisk red */
+  font-size: 16px; /* Adjust the size of the asterisk if needed */
+}
+.size-options{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  margin-left: -10vw;
+}
+.terms{
+  margin-left:-20vw;
+  margin-top: 8%;
+  width:100%;
+  display: flex;
+  justify-self: center;
+  flex-wrap: nowrap;
+
+}
+input[type="radio"] {
+  margin-right: -7vw; /* Adjust as needed */
+}
+input[type="checkbox"] {
+  margin-right: -7vw; /* Adjust as needed */
+}
+
+.submit-btn{
+  margin-top: 5%;
+}
+.img-options{
+  margin-left: -7vw;
+  display: flex;
+  
+  flex-direction: column;
+  
+}
+
+.img-options img{
+  width:55%;
+  background-color: white;
+  height:40%;
+}
+.img-options input[type="radio"]{
+  position: relative;
+  transform: translateY(-10vw);
+}
+@media(max-width:1440px){
+  .inform input {
+    
+    width: 20vw;
+    border-radius: 5px;
+  }
+  .dropdown-select{
+    max-width:21vw;
+  }
+}
+
+@media(max-width:1080px){
+  .inform input {
+    
+    width: 27vw;
+    border-radius: 5px;
+  }
+  .dropdown-select{
+    max-width:29vw;
+  }
+  input[type="radio"] {
+    margin-right: -10vw; /* Adjust as needed */
+  }
+  input[type="checkbox"] {
+    margin-right: -10vw; /* Adjust as needed */
+  }
+  .terms{
+    margin-left:-25vw;
+  }
+  .size-options{
+    margin-left: -15vw;
+  }
+  .img-options{
+    margin-left: -15vw;
+  }
+  .button-group{
+    margin-left:25vw;
+  }
+
+}
+@media(max-width:768px){
+    .terms{
+      margin-left:0vw;
+ 
+    }
+    .button-group{
+      margin-left:20vw;
+    }
+    
+    input[type="checkbox"] {
+      margin-right: 3vw; /* Adjust as needed */
+      width:2.75vw;
+      height:2.75vw;
+    }
+
+}
+@media(max-width:700px){
+  .button-group{
+    margin-left:17vw;
+  }
+}

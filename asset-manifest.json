@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Merchandise_Form/static/css/main.0d497f89.css",
+    "main.js": "/Merchandise_Form/static/js/main.49613838.js",
+    "static/js/453.3bbcf3ca.chunk.js": "/Merchandise_Form/static/js/453.3bbcf3ca.chunk.js",
+    "static/media/Purple Halloween Final.png": "/Merchandise_Form/static/media/Purple Halloween Final.1846754c1f15cbdb40dd.png",
+    "static/media/Black Halloween Final.png": "/Merchandise_Form/static/media/Black Halloween Final.8bd3c59a921c238243d2.png",
+    "static/media/loader.gif": "/Merchandise_Form/static/media/loader.4c1dbeaa64edc4a81f44.gif",
+    "static/media/Background Box.png": "/Merchandise_Form/static/media/Background Box.ae6f3dc1dca54372d4d5.png",
+    "static/media/sangam 3.jpg": "/Merchandise_Form/static/media/sangam 3.9489ed38358f008fa525.jpg",
+    "static/media/DVM-Logo.svg": "/Merchandise_Form/static/media/DVM-Logo.1d5bb908b68a57701fbb71d77b419d9c.svg",
+    "index.html": "/Merchandise_Form/index.html",
+    "main.0d497f89.css.map": "/Merchandise_Form/static/css/main.0d497f89.css.map",
+    "main.49613838.js.map": "/Merchandise_Form/static/js/main.49613838.js.map",
+    "453.3bbcf3ca.chunk.js.map": "/Merchandise_Form/static/js/453.3bbcf3ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d497f89.css",
+    "static/js/main.49613838.js"
+  ]
+}

@@ -220,7 +220,13 @@ const Info = () => {
     }
   }, [cookies.cookieConsent, cookies.userEmail, cookies.userBITSID]);
 
-  const isSubmitDisabled = isCookieLoading || !cookieConsentConfirmed;
+  const isSubmitDisabled =
+    isCookieLoading ||
+    !cookieConsentConfirmed ||
+    nameError ||
+    emailError ||
+    numberError ||
+    IDError;
 
   const handleAcceptCookies = () => {
     console.log("Accepting cookies");

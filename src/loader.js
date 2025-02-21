@@ -7,18 +7,17 @@ const Loader = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Disable scrolling when the loader is active
     document.body.style.overflow = "hidden";
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-      // Enable scrolling once loading is complete
+
       document.body.style.overflow = "auto";
     }, 5000);
 
     return () => {
       clearTimeout(timer);
-      document.body.style.overflow = "auto"; // Ensure scrolling is reset when unmounting
+      document.body.style.overflow = "auto";
     };
   }, []);
 

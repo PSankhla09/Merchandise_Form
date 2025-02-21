@@ -1,11 +1,11 @@
-/* Global Styles */
 body.no-scroll {
   overflow: hidden;
 }
-body{
+
+body {
   background-color: black;
 }
-/* Overlay */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -16,12 +16,11 @@ body{
   z-index: 100;
 }
 
-/* Page Content */
 .page-content {
   padding: 20px;
 }
 
-/* Inform Section */
+
 .inform {
   max-width: 71%;
   margin-left: 13.25%;
@@ -53,7 +52,6 @@ body{
   color: red;
 }
 
-/* Cookie Banner */
 .cookie-banner {
   position: fixed;
   bottom: 0;
@@ -65,8 +63,8 @@ body{
   z-index: 102;
 }
 
-/* Cookie Banner Buttons */
-.accept-btn, .decline-btn {
+.accept-btn,
+.decline-btn {
   background-color: #28a745;
   color: white;
   border: none;
@@ -79,28 +77,30 @@ body{
   background-color: #dc3545;
 }
 
-.accept-btn:hover, .decline-btn:hover {
+.accept-btn:hover,
+.decline-btn:hover {
   opacity: 0.8;
 }
 
 
 
-/* Submit button */
+
 .submit-btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
 
-  .button-group {
-    display: flex;
-    gap: 10px;
-    margin-left: 27vw;
-  }
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-left: 27vw;
+}
+
 .submit-btn {
   padding: 10px 15px;
   background-color: #28a745;
   color: white;
-  
+
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -112,30 +112,28 @@ body{
 
 
 
-/* Container for the select dropdown */
 .dropdown-select {
   width: 100vw;
-  max-width: 21.5vw; /* Adjust the width to your preference */
+  max-width: 21.5vw;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #fff;
- 
+
   cursor: pointer;
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 
 
-/* Change background color and border when the select is hovered or focused */
 .dropdown-select:hover,
 .dropdown-select:focus {
   background-color: #f1f1f1;
   border-color: #888;
 }
 
-/* Style for the default 'Select Hostel' option */
+
 .dropdown-select option {
   padding: 10px;
   font-size: 16px;
@@ -144,137 +142,156 @@ body{
 
 
 
-/* Input Styling */
+
 .inform input {
   padding: 10px 8px;
   border: none;
-  
+
   width: 20vw;
   border-radius: 5px;
 }
-.inform input[type="radio"]{
+
+.inform input[type="radio"] {
   margin-left: 7vw;
 }
 
 .inform span {
   font-weight: bold;
 }
-/* Info.css */
 
-/* Error message style */
+
+
 .error {
   color: red;
   font-size: 14px;
   margin-top: 5px;
 }
-/* Info.css */
 
-/* Style for the red asterisk (*) */
+
+
 h4::after {
-  content: " *";  /* Adds the asterisk */
-  color: red;      /* Makes the asterisk red */
-  font-size: 16px; /* Adjust the size of the asterisk if needed */
+  content: " *";
+  color: red;
+  font-size: 16px;
 }
-.size-options{
+
+.size-options {
   display: flex;
   flex-direction: column;
-  gap:10px;
+  gap: 10px;
   margin-left: -10vw;
 }
-.terms{
-  margin-left:-20vw;
+
+.terms {
+  margin-left: -20vw;
   margin-top: 8%;
-  width:100%;
+  width: 100%;
   display: flex;
   justify-self: center;
   flex-wrap: nowrap;
 
 }
+
 input[type="radio"] {
-  margin-right: -7vw; /* Adjust as needed */
-}
-input[type="checkbox"] {
-  margin-right: -7vw; /* Adjust as needed */
+  margin-right: -7vw;
 }
 
-.submit-btn{
+input[type="checkbox"] {
+  margin-right: -7vw;
+}
+
+.submit-btn {
   margin-top: 5%;
 }
-.img-options{
+
+.img-options {
   margin-left: -7vw;
   display: flex;
-  
+
   flex-direction: column;
-  
+
 }
 
-.img-options img{
-  width:55%;
+.img-options img {
+  width: 55%;
   background-color: white;
-  height:40%;
+  height: 40%;
 }
-.img-options input[type="radio"]{
+
+.img-options input[type="radio"] {
   position: relative;
   transform: translateY(-10vw);
 }
-@media(max-width:1440px){
+
+@media(max-width:1440px) {
   .inform input {
-    
+
     width: 20vw;
     border-radius: 5px;
   }
-  .dropdown-select{
-    max-width:21vw;
+
+  .dropdown-select {
+    max-width: 21vw;
   }
 }
 
-@media(max-width:1080px){
+@media(max-width:1080px) {
   .inform input {
-    
+
     width: 27vw;
     border-radius: 5px;
   }
-  .dropdown-select{
-    max-width:29vw;
+
+  .dropdown-select {
+    max-width: 29vw;
   }
+
   input[type="radio"] {
-    margin-right: -10vw; /* Adjust as needed */
+    margin-right: -10vw;
   }
+
   input[type="checkbox"] {
-    margin-right: -10vw; /* Adjust as needed */
+    margin-right: -10vw;
   }
-  .terms{
-    margin-left:-25vw;
+
+  .terms {
+    margin-left: -25vw;
   }
-  .size-options{
+
+  .size-options {
     margin-left: -15vw;
   }
-  .img-options{
+
+  .img-options {
     margin-left: -15vw;
   }
-  .button-group{
-    margin-left:25vw;
+
+  .button-group {
+    margin-left: 25vw;
   }
 
 }
-@media(max-width:768px){
-    .terms{
-      margin-left:0vw;
- 
-    }
-    .button-group{
-      margin-left:20vw;
-    }
-    
-    input[type="checkbox"] {
-      margin-right: 3vw; /* Adjust as needed */
-      width:2.75vw;
-      height:2.75vw;
-    }
+
+@media(max-width:768px) {
+  .terms {
+    margin-left: 0vw;
+
+  }
+
+  .button-group {
+    margin-left: 20vw;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 3vw;
+    width: 2.75vw;
+    height: 2.75vw;
+  }
 
 }
-@media(max-width:700px){
-  .button-group{
-    margin-left:17vw;
+
+@media(max-width:700px) {
+  .button-group {
+    margin-left: 17vw;
   }
 }

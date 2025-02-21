@@ -241,7 +241,6 @@ const Info = () => {
     setCookieConsentConfirmed(true);
     document.body.classList.remove("no-scroll");
 
-    // Log cookies after accepting
     console.log("Cookie consent set to:", cookies.cookieConsent);
   };
 
@@ -276,18 +275,16 @@ const Info = () => {
   }, [cookies.cookieConsent]);
 
   useEffect(() => {
-    console.log("Initial cookie consent check:", cookies.cookieConsent); // Logs initial state of the cookie consent
+    console.log("Initial cookie consent check:", cookies.cookieConsent);
 
-    // Ensure cookie loading state has been processed and cookie consent is available
-    console.log("Cookie consent state:", cookies.cookieConsent); // Logs cookie consent state
-    console.log("Cookie loading state:", isCookieLoading); // Logs loading state
+    console.log("Cookie consent state:", cookies.cookieConsent);
+    console.log("Cookie loading state:", isCookieLoading);
 
     if (isCookieLoading) {
       console.log("Cookie consent is still loading, skipping further checks.");
-      return; // Skip further checks until cookies are fully loaded
+      return;
     }
 
-    // If the cookie consent is available (not undefined), process the logic
     if (cookies.cookieConsent === true) {
       console.log("Cookie consent is available:", cookies.cookieConsent);
       setShowCookieBanner(false);

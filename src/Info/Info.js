@@ -211,8 +211,6 @@ const Info = () => {
     if (cookies.cookieConsent !== undefined) {
       setIsCookieLoading(false);
       setCookieConsentConfirmed(cookies.cookieConsent === "true");
-      setShowCookieBanner(cookies.cookieConsent !== "true");
-      setShowOverlay(cookies.cookieConsent !== "true");
     }
     if (cookies.userEmail && cookies.userBITSID) {
       setEmail(cookies.userEmail);
@@ -257,22 +255,6 @@ const Info = () => {
     setCookieConsentConfirmed(false);
     document.body.classList.remove("no-scroll");
   };
-
-  useEffect(() => {
-    if (cookies.cookieConsent !== undefined) {
-      setIsCookieLoading(false);
-      setCookieConsentConfirmed(false);
-      if (cookies.cookieConsent === "true") {
-        setShowCookieBanner(false);
-        setCookieConsentConfirmed(true);
-        setShowOverlay(false);
-      } else {
-        setShowCookieBanner(true);
-        setCookieConsentConfirmed(false);
-        setShowOverlay(true);
-      }
-    }
-  }, [cookies.cookieConsent]);
 
   useEffect(() => {
     console.log("Initial cookie consent check:", cookies.cookieConsent);

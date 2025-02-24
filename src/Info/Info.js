@@ -75,7 +75,7 @@ const Info = () => {
 
   const validateEmail = (email) => {
     console.log("Validating email:", email);
-    return /^[a-zA-Z0-9._%+-]+@pilani\.bits-pilani\.ac\.in$/.test(email);
+    return /^[a-zA-Z0-9]+@pilani\.bits-pilani\.ac\.in$/.test(email);
   };
 
   const validatePhone = (number) => {
@@ -219,11 +219,7 @@ const Info = () => {
       setIsCookieLoading(false);
       setCookieConsentConfirmed(cookies.cookieConsent === "true");
     }
-    if (cookies.userEmail && cookies.userBITSID) {
-      setEmail(cookies.userEmail);
-      setID(cookies.userBITSID);
-    }
-  }, [cookies.cookieConsent, cookies.userEmail, cookies.userBITSID]);
+  }, [cookies.cookieConsent]);
 
   const isSubmitDisabled =
     isCookieLoading ||
@@ -244,7 +240,6 @@ const Info = () => {
     setShowCookieBanner(false);
     setShowOverlay(false);
     setCookieConsentConfirmed(true);
-    document.body.classList.remove("no-scroll");
 
     console.log("Cookie consent set to:", cookies.cookieConsent);
   };
@@ -260,12 +255,9 @@ const Info = () => {
     setShowCookieBanner(false);
     setShowOverlay(false);
     setCookieConsentConfirmed(false);
-    document.body.classList.remove("no-scroll");
   };
 
   useEffect(() => {
-    console.log("Initial cookie consent check:", cookies.cookieConsent);
-
     console.log("Cookie consent state:", cookies.cookieConsent);
     console.log("Cookie loading state:", isCookieLoading);
 
@@ -288,16 +280,6 @@ const Info = () => {
       setShowOverlay(true);
     }
   }, [cookies.cookieConsent, isCookieLoading]);
-
-  useEffect(() => {
-    console.log("Body no-scroll class management:", cookies.cookieConsent);
-
-    if (cookies.cookieConsent === "true" || cookies.cookieConsent === "false") {
-      document.body.classList.remove("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-  }, [cookies.cookieConsent]);
 
   return (
     <div>

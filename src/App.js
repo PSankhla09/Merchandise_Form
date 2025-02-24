@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <Loader />
-
       <Routes>
         <Route path="/Merchandise_Form/" element={<Info />} />
         <Route path="/success" element={<AS />} />

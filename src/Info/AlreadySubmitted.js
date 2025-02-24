@@ -1,7 +1,6 @@
 import React from "react";
 
 const AlreadySubmitted = () => {
-  
   const handleContactClick = () => {
     window.location.href = "mailto:f20240451@pilani.bits-pilani.ac.in";
   };

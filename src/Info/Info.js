@@ -65,6 +65,11 @@ const Info = () => {
 
   const validateName = (name) => {
     console.log("Validating name:", name);
+
+    if (name.length > 50) {
+      return false;
+    }
+
     return /^[A-Za-z]+(?:\s[A-Za-z]+)+$/.test(name);
   };
 
@@ -92,7 +97,9 @@ const Info = () => {
     if (value.trim()) {
       switch (name) {
         case "name":
-          error = validateName(value) ? "" : "Please enter your full name.";
+          error = validateName(value)
+            ? ""
+            : "Please enter your full name in not more than 50 characters.";
           errorSetter(error);
           break;
         case "email":

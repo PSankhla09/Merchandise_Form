@@ -342,7 +342,7 @@ const Info = () => {
             before they vanish into the night!🌙💀
           </p>
           <br />
-          <p>Get ready for the ultimate merchandise collection! 🌙💀</p>
+
           <br />
           <p className="hh">* Indicates required fields</p>
         </div>

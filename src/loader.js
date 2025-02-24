@@ -17,7 +17,6 @@ const Loader = () => {
 
     return () => {
       clearTimeout(timer);
-      document.body.style.overflow = "auto";
     };
   }, []);
 
